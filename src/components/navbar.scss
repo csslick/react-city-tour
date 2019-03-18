@@ -1,0 +1,29 @@
+@import "../index.scss";
+
+.navbar{
+  background: $mainBlack;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 2em;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  // border: 1px solid red;
+  width: 100%;
+}
+ul li{
+  flex: 1;
+}
+a.nav-link{
+  padding: 0 10px;
+  text-decoration: none;
+  color: $mainGray;
+  transition: 0.3s;
+  &:hover{
+    color: $mainGreen;
+  }
+}
