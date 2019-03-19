@@ -6,6 +6,7 @@ import { tourData } from "./tourData";
 
 class App extends Component {
   state = {
+    // data
     tours: tourData
   }
 
