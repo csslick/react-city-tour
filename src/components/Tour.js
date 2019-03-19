@@ -23,7 +23,7 @@ class Tour extends Component {
       <section className='tourlist'>
         <figure>
           <img src={img} alt={city} width="300px" />
-          <span className='close-btn'>
+          <span className='close-btn' onClick={()=>removeTour(id)}>
             <i className="far fa-window-close"></i>
           </span>
         </figure>  

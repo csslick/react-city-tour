@@ -11,8 +11,15 @@ class App extends Component {
 
   removeTour = (id) => {
     console.log(id)
+    const { tours } = this.state;
+    const sortedTours = tours.filter(tour => {
+      return tour.id !== id
+    })
+    this.setState({
+      tours: sortedTours
+    })
   }
-  
+
   render() {
     // console.log(this.state.tours);
     const { tours } = this.state;
